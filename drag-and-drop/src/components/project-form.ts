@@ -1,6 +1,6 @@
 import { autobind } from "../decorators/autobind";
 import { projectState } from "../state/project";
-import { Validatable, validate } from "../util/validation";
+import { Validatable, validate } from "../utils/validation";
 import { Component } from "./base-component";
 
 export default class ProjectForm extends Component<HTMLFormElement> {
