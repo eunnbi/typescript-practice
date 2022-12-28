@@ -1,0 +1,12 @@
+{
+  "name": "decorator",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "lite-server",
+    "prestart": "npx tsc"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
