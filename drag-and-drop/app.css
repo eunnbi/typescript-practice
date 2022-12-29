@@ -1,13 +1,14 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: sans-serif;
+  font-family: Pretendard, sans-serif;
 }
 
 body {
-  margin: 0;
+  margin: 1rem;
 }
 
 label,
@@ -28,36 +29,22 @@ textarea {
   width: 100%;
   max-width: 30rem;
   border: 1px solid #ccc;
+  border-radius: 5px;
   resize: none;
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-  background: #fff5f9;
 }
 
 button {
   font: inherit;
-  background: #ff0062;
-  border: 1px solid #ff0062;
+  background-color: #000;
   cursor: pointer;
   color: white;
   padding: 0.75rem 1rem;
-}
-
-button:focus {
-  outline: none;
-}
-
-button:hover,
-button:active {
-  background: #a80041;
-  border-color: #a80041;
+  align-self: flex-start;
 }
 
 .projects {
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #ff0062;
 }
 
@@ -86,13 +73,16 @@ button:active {
   list-style: none;
   margin: 0;
   padding: 1rem;
+  flex-grow: 1;
 }
 
 .projects li {
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
   padding: 1rem;
   margin: 1rem;
   background-color: white;
+  box-shadow: rgb(15 15 15 / 10%) 0px 0px 0px 1px,
+    rgb(15 15 15 / 10%) 0px 2px 4px;
+  border-radius: 3px;
 }
 
 .projects li h2 {
@@ -122,8 +112,23 @@ button:active {
 }
 
 #user-input {
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
   padding: 1rem;
-  border: 1px solid #ff0062;
+  border: 1px solid #000;
   background: #f7f7f7;
+}
+
+#project-section-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 670px) {
+  #project-section-box {
+    display: flex;
+    flex-direction: column;
+  }
 }
