@@ -14,7 +14,7 @@ export default class ProjectList
   private DROPPABLE = "droppable";
 
   constructor(private type: ProjectStatus) {
-    super("project-list", "app", false, `${type}-projects`);
+    super("project-list", "project-section-box", false, `${type}-projects`);
     this.assignedProjects = [];
     this.listElement = this.element.querySelector("ul")!;
     this.listElement.id = `${this.type}-projects-list`;
