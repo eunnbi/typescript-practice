@@ -31,7 +31,7 @@ export default class ProjectList
   }
 
   @autobind
-  dragLeaveHandler(event: DragEvent): void {
+  dragLeaveHandler(_: DragEvent): void {
     this.listElement.classList.remove(this.DROPPABLE);
   }
 
