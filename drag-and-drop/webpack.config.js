@@ -13,7 +13,7 @@ module.exports = {
   },
   devtool: "inline-source-map",
   module: {
-    // 다양한 유형의 모듈을 처리하는 방법을 지정할 수 있다.
+    // 다양한 유형의 모듈을 처리하는 방법 지정 (로더)
     rules: [
       {
         test: /\.ts$/,
